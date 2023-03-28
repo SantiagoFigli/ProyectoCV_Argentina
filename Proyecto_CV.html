@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reginald Mills</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\Julieta\Desktop\CURSO HTML ARGENTINA PROGRAMA 4.0\Proyecto_CV\web-semantica.png">
+    <link rel="stylesheet" href="cv.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Hola, mi nombre es</h1>
+      <p>Reginald Mills</p>
+      <p>Teléfono: (632) 681-1727</p>
+      <p>Email: reginald.mills@example.com</p>
+      <p>LinkedIn: //reginald.mills</p>
+      <img src ="C:\Users\Julieta\Desktop\CURSO HTML ARGENTINA PROGRAMA 4.0\Proyecto_CV\profile.jpg">
+    </div>
+    <div class="content">
+      <h2>Resumen profesional</h2>
+      <p>Como recién graduado, me encantaría poder entrar a formar parte de una empresa en la que poder aplicar todos mis conocimientos y, al mismo tiempo, que me permita desarrollarme profesionalmente.
+
+        Gracias a mi formación especializada, considero que puedo aportar valor y seguir desarrollándome profesionalmente en una compañía que coincida con mis valores y expectativas.
+        
+        Como persona organizada y con una gran motivación, soy capaz de adaptarme a cualquier circunstancia y dar siempre lo mejor de mí en cualquier proyecto, al mismo tiempo que me esfuerzo por trabajar en equipo y fomentar valores como los del compañerismo.</p>
+      <h2>Experiencia laboral</h2>
+      <ul>
+        <li>
+          <h3>Desarrollo Informatico</h3>
+          <p>Google | Diciembre 2018 - Febrero 2021</p>
+          <ul>
+            <li>Realizar tareas de análisis, diseño, desarrollo, prueba-depuración y mantenimiento de los sistemas informáticos requeridos.</li>
+            <li>Atender los requerimientos de desarrollo de sistemas informáticos sobre la base de especificaciones funcionales elaboradas por las distintas áreas de la institución.</li>
+            <li>Efectuar el control de calidad de los sistemas informáticos desarrollados o sujetos de mantenimiento.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Equipo de desarrollo</h3>
+          <p>AMAZON | Abril 2021 - actualidad</p>
+          <ul>
+            <li>Proporcionar información oportuna, veraz y precisa en el ámbito de sus competencias a requerimiento  de su inmediato superior o autoridades superiores.</li>
+            <li>Promover el uso de herramientas de Software libre y estándares abiertos.</li>
+            <li>Transferir los sistemas desarrollados o sujetos de mantenimiento al Departamento de Administración de Sistemas, para su implementación, soporte y capacitación.</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Educación</h2>
+      <ul>
+        <li>
+          <h3>Instituto Tecnológico de Massachusetts (MIT)</h3>
+          <p>Ingenieria en Sistemas | 2015 - 2020</p>
+        </li>
+        <li>
+          <h3>Instituto Tecnológico de Massachusetts (MIT)</h3>
+          <p>Maestría en Ingeniería en Sistemas | 2020 - 2022</p>
+        </li>
+      </ul>
+      <h3>Habilidades y conocimientos</h3>
+      <img src ="C:\Users\Julieta\Desktop\CURSO HTML ARGENTINA PROGRAMA 4.0\Proyecto_CV\logo.jpg">
+      
+      <h4>Ingrese sus datos para contacto</h4>
+      <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea><br><br>
+        <input type="submit" value="Enviar">
+      </form>
+
+      <script>
+        // Agregar un listener para escuchar cuando se envía el formulario
+    document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevenir el envío del formulario por defecto
+
+    // Obtener los valores de los campos de entrada
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var mensaje = document.getElementById("mensaje").value;
+
+    // Validar los campos de entrada
+    if (nombre == "" || email == "" || mensaje == "") {
+        alert("Por favor complete todos los campos.");
+        return false;
+    } else {
+        alert("Gracias por enviar el formulario.");
+        return true;
+    }
+});
+      </script>
+    
+    </div>
+    </div>
+  </body>
+</html>
